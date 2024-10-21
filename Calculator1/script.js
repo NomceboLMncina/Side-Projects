@@ -6,16 +6,12 @@ function appendToDisplay(value) {
 function calculate() {
     const display = document.getElementById('display');
     const expression = display.value;
-    
-    // This will replace the result of any mathematical operation with "This is it!"
-    if (expression.match(/[0-9]+[+\-*/][0-9]+/)) {
-        display.value = 'This is it!';
-    } else {
-        try {
-            display.value = eval(expression);
-        } catch {
-            display.value = 'Error';
-        }
+
+    try {
+        // Use eval to calculate the result of the expression
+        display.value = eval(expression);
+    } catch {
+        display.value = 'Error';
     }
 }
 
