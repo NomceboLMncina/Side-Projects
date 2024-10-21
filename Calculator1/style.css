@@ -3,12 +3,31 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background: radial-gradient(circle,
+        #e0f7fa,
+        #80deea,
+        #26c6da,
+        #00acc1,
+        #0097a7,
+        #00796b
+    );
     margin: 0;
 }
 
+.calculator-container {
+    text-align: center; /* Center the title */
+}
+
+.calculator-title {
+    font-size: 36px; /* Increased font size */
+    margin-bottom: 20px; /* Space between title and calculator */
+    color: #003366; /* Dark navy blue for contrast */
+    font-weight: bold; /* Make text bold */
+    text-transform: uppercase; /* Convert text to uppercase */
+}
+
 .calculator {
-    background-color: white;
+    background-color: #f9f9f9; /* Light gray background for the calculator */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -33,12 +52,12 @@ body {
 button {
     height: 50px;
     font-size: 18px;
-    background-color: #e0e0e0;
+    background-color: #e0e0e0; /* Keep button color */
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 button:active {
-    background-color: #d0d0d0;
+    background-color: #d0d0d0; /* Keep active button color */
 }
